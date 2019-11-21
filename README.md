@@ -13,7 +13,7 @@
 
 ## About
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6c4f335a-ce52-49f7-a5e1-70aa8e95a333/deploy-status)](https://app.netlify.com/sites/angry-kirch-feb6a6/deploys)ploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c4f335a-ce52-49f7-a5e1-70aa8e95a333/deploy-status)](https://app.netlify.com/sites/angry-kirch-feb6a6/deploys)
 
 Brevifolia is minimalist blog starter to get you going using [Forestry](https://forestry.io/) with [Nuxt](https://nuxtjs.org/). Check out the demo [here](https://brevifolia-nuxt-forestry.netlify.com/)
 
