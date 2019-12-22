@@ -3,7 +3,7 @@
 <template>
   <article class="blog">
       <figure class="blog__hero">
-          <img :src="post.attributes.hero_image" :alt="post.attributes.title">
+          <img :src="`https://res.cloudinary.com/jdlennoxs/image/upload/${post.attributes.hero_image}`" :alt="post.attributes.title">
       </figure>
     <div class="blog__info" >
       <h1>{{ post.attributes.title }}</h1>
