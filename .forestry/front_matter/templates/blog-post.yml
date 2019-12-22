@@ -8,6 +8,11 @@ fields:
   config:
     required: true
   description: Enter title, needs to match filename for routing
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+  description: Categorisation for this content
 - name: author
   type: select
   default: []
@@ -29,5 +34,16 @@ fields:
 - type: file
   name: hero_image
   label: hero_image
+- name: time_to_read
+  type: number
+  label: Time to read
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  description: The approximate reading time of this article
+  hidden: true
 pages:
 - content/blog-posts/building-a-blog-with-the-jam-stack.md
