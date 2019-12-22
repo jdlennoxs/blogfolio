@@ -8,7 +8,7 @@
             >
                 <li>
                     <div class="hero_image">
-                        <img :src="post.attributes.hero_image" :alt="post.attributes.title">
+                        <img :src="`https://res.cloudinary.com/jdlennoxs/image/upload/w_250,h_250,c_fill/${post.attributes.hero_image}`" :alt="post.attributes.title">
                     </div>
                     <div class="blogList__info">
                         <h2>{{ post.attributes.title }}</h2>
