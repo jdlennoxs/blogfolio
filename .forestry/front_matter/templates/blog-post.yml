@@ -46,5 +46,4 @@ fields:
   description: The approximate reading time of this article
   hidden: true
 pages:
-- content/blog-posts/building-a-blog-with-the-jam-stack.md
 - content/blog-posts/is-this-thing-on.md
