@@ -2,8 +2,8 @@
 tags: []
 author: Jack Scott
 title: Is this thing on?
-date: 2019-12-23T17:00:00Z
-hero_image: ''
+date: 2019-12-23T17:00:00.000+00:00
+hero_image: "/v1577991023/reduced_xpwqet.png"
 time_to_read: 
 
 ---
