@@ -19,6 +19,10 @@ sections:
 - type: document
   path: content/data/info.json
   label: Info Page
+- type: document
+  path: hello
+  label: Hello
+  match: "**/*"
 - type: heading
   label: Config
 - type: document
