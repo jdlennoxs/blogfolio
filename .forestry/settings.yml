@@ -21,7 +21,7 @@ sections:
   label: Info Page
 - type: document
   path: content/data/hello.json
-  label: Hello
+  label: Hello Text
 - type: heading
   label: Config
 - type: document
