@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-@import url('https://use.typekit.net/efh3hfs.css');
+@import url('https://rsms.me/inter/inter.css');
+@import './colors.scss';
 // layouts ------------------------
 @import './layouts/layout.scss';
 //pages ----------------------------
@@ -11,10 +11,11 @@
 
 
 body {
-  font-family: "Minion Pro", "Nunito","Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif; 
+  font-feature-settings: 'liga' 1, 'ss01' 1;
   overflow-x: hidden;
   color: #000;
-  font-size: 16px;
+  // font-size: 18px;
 }
 
 a {
@@ -23,26 +24,17 @@ a {
   transition: opacity .2s ease;
 }
 
-a:hover {
-  transition: opacity .2s ease;
-  opacity: .5;
-  text-decoration-color: inherit;
-}
+// a:hover {
+//   transition: opacity .2s ease;
+//   opacity: .5;
+//   text-decoration-color: inherit;
+// }
 ul {
   list-style: none;
   margin: 0;
 }
 
 //TYPOGRAPHY-------------------------------------
-
-h1, h2, h3, h4, h5, h6, p {
-  font-family: "Minion Pro", "Nunito","Helvetica Neue", Helvetica, sans-serif;
-}
-
-h1, h2 {
-  font-weight: 500;
-}
-
 h1 {
   font-size: 2rem;
   letter-spacing: -1px;
@@ -59,15 +51,15 @@ h3 {
   font-size: 1.2rem;
   letter-spacing: -.5px;
   line-height: 1.1875;
-  color: #A0A0A0;
+  color: #c95869;
   font-weight: normal;
 }
 
 p {
   font-size: 1.2rem;
-  letter-spacing: -.5px;
-  line-height: 1.5;
-  color: #464646;
+  // letter-spacing: -.5px;
+  line-height: 1.6;
+  color: #000;
 }
 
 @media (min-width: 1280px) {
@@ -85,9 +77,10 @@ p {
   }
   
   h3 {
+    font-size: 1rem;
     letter-spacing: -.5px;
     line-height: 1.1875;
-    color: #A0A0A0;
+    color: #c95869;
     font-weight: normal;
   }
 

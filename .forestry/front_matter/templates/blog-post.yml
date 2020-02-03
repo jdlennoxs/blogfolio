@@ -24,7 +24,7 @@ fields:
       section: author-list
       file: content/data/authors.json
       path: authors
-  label: Author
+  label: author
   description: Select author, to add a new author, go to Authors List
 - type: datetime
   name: date
@@ -36,7 +36,7 @@ fields:
   label: hero_image
 - name: time_to_read
   type: number
-  label: Time to read
+  label: time_to_read
   default: 0
   required: true
   config:

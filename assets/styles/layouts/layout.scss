@@ -1,24 +1,22 @@
 .layout {
     display: flex;
+    background-color: $background;
     flex-direction: column;
-    min-height: 100vh;
-    &.info_page {
-      color: #EBEBEB;
-    }
+    max-width: 96rem;
+    margin: 0 auto;
   }
   
   .content {
     flex-grow: 1;
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 72rem) {
     .layout {
       display: block;
     }
     .content {
       flex-grow: none;
       width: 70vw;
-      margin-left: 30vw;
     }
   }
   

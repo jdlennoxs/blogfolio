@@ -6,7 +6,7 @@ fields:
   type: text
   config:
     required: false
-  label: TItle
+  label: title
 - name: description
   type: textarea
   default: ''
@@ -15,4 +15,6 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Description
+  label: description
+pages:
+- content/data/hello.json
