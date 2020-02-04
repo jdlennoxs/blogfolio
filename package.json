@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@inkline/inkline": "^1.20.2",
-    "frontmatter-markdown-loader": "^1.8.0",
+    "frontmatter-markdown-loader": "^3.1.0",
     "node-sass": "^4.13.1",
     "nuxt": "^2.11.0",
     "sass-loader": "^7.1.0",
