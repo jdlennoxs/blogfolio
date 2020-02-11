@@ -781,12 +781,11 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@inkline/inkline@^1.20.2":
-  version "1.20.2"
-  resolved "https://registry.yarnpkg.com/@inkline/inkline/-/inkline-1.20.2.tgz#f237ab977a0fdb5726622457c42c48c0c81d53bd"
-  integrity sha512-F/nDoC+Eq4YZ7C06aAIq7I+lQfsitYJyrGftwOVO93ZXvvhjjt47kZ+yIlUomdC9ipWS4rW3Zv3QRZZ5gKPOJg==
+"@inkline/inkline@^1.20.3":
+  version "1.20.3"
+  resolved "https://registry.yarnpkg.com/@inkline/inkline/-/inkline-1.20.3.tgz#457dc2a245e5135960d6aa64350f4a640bb1d2e6"
+  integrity sha512-ghN9c3qEUls0gWVytKdnM0fdXzNSLEBki1e03BNBLTyPzNCUySGgfJdLuge4hJoYVUysMAAzMYANymNg/fvUzw==
   dependencies:
-    core-js "^3.6.4"
     fuse.js "^3.4.6"
     popper.js "^1.16.1"
 
@@ -2548,7 +2547,7 @@ core-js-pure@^3.0.0:
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.6.4.tgz#4bf1ba866e25814f149d4e9aaa08c36173506e3a"
   integrity sha512-epIhRLkXdgv32xIUFaaAry2wdxZYBi6bgM7cB136dzzXXa+dFyRLTZeLUJxnd8ShrmyVXBub63n2NHo2JAt8Cw==
 
-core-js@3.6.4, core-js@^3.6.4:
+core-js@3.6.4:
   version "3.6.4"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.4.tgz#440a83536b458114b9cb2ac1580ba377dc470647"
   integrity sha512-4paDGScNgZP2IXXilaffL9X7968RuvwlkK3xWtZRVqgd8SYNiVKRJvkFd1aqqEuPfN7E68ZHEp9hDj6lHj4Hyw==
