@@ -20,8 +20,8 @@ sections:
   path: content/data/info.json
   label: Info Page
 - type: document
-  path: content/data/hello.json
-  label: Hello Text
+  path: content/data/about.json
+  label: About Text
 - type: heading
   label: Config
 - type: document

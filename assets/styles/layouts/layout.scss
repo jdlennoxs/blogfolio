@@ -2,21 +2,28 @@
     display: flex;
     background-color: $background;
     flex-direction: column;
-    max-width: 96rem;
+    max-width: 72rem;
     margin: 0 auto;
   }
   
   .content {
     flex-grow: 1;
   }
-  
-  @media (min-width: 72rem) {
-    .layout {
-      display: block;
-    }
-    .content {
-      flex-grow: none;
-      width: 70vw;
-    }
+
+  .label {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $dark;
   }
+  
+  // @media (min-width: 72rem) {
+  //   .layout {
+  //     display: block;
+  //   }
+  //   .content {
+  //     flex-grow: none;
+  //     width: 70vw;
+  //   }
+  // }
   

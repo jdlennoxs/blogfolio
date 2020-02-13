@@ -2,39 +2,39 @@
 
 <template>
   <div class="layout">
-    <section>
-      <Hello />
-    </section>
-    <section>
-      <BlogList :posts="posts" />
-    </section>
+    <About v-bind="about" />
+    <BlogList :posts="posts" />
   </div>
 </template>
 
 <script>
 import BlogList from '~/components/BlogList.vue';
-import Hello from '~/components/Hello.vue';
+import About from '~/components/About.vue';
 
 export default {
   layout: 'layout',
   components: {
-    Hello,
+    About,
     BlogList
   },
   async asyncData() {
-    // create context via webpack to map over all blog posts
-    const allPosts = await require.context(
-      '~/content/blog-posts/',
-      true,
-      /\.md$/
-    );
-    const posts = allPosts.keys().map((key) => {
-      // give back the value of each post context
-      return allPosts(key);
-    });
-    return {
-      posts
-    };
+    try {
+      // create context via webpack to map over all blog posts
+      const allPosts = await require.context(
+        '~/content/blog-posts/',
+        true,
+        /\.md$/
+      );
+      const about = await import('~/content/data/about.json');
+      const posts = allPosts.keys().map((key) => {
+        // give back the value of each post context
+        return allPosts(key);
+      });
+      return {
+        posts,
+        about
+      };
+    } catch (err) {}
   }
 };
 </script>

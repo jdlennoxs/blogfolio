@@ -1,20 +1,25 @@
 ---
-label: Hello
+label: About
 hide_body: true
 fields:
+- name: label
+  type: text
+  config:
+    required: true
+  label: label
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: title
 - name: description
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: false
     schema:
       format: markdown
   label: description
 pages:
-- content/data/hello.json
+- content/data/about.json
