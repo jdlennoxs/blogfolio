@@ -1,9 +1,13 @@
 // the posts are passed down to the Blog List component to be rendered
 
 <template>
-  <div class="layout">
-    <About v-bind="about" />
-    <BlogList :posts="posts" />
+  <div class="content">
+    <section>
+      <Hello />
+    </section>
+    <section>
+      <BlogList :posts="posts" />
+    </section>
   </div>
 </template>
 

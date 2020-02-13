@@ -14,6 +14,34 @@
           </div>
         </li>
       </NuxtLink>
+      <i-card variant="light">
+        <template slot="header">Light Card</template>
+        <h4>Title</h4>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </i-card>
+      <i-card variant="light">
+        <template slot="header">Light Card</template>
+        <h4>Title</h4>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </i-card>
+      <!-- <NuxtLink  
+                v-for="post in sortedPosts" 
+                :key="post.attributes.title" 
+                :to="`/blog/${formatSlug(post.attributes.title)}`"
+            >
+                <li>
+                    <div class="hero_image">
+                        <img :src="`https://res.cloudinary.com/jdlennoxs/image/upload/w_250,h_250,c_fill/${post.attributes.hero_image}`" :alt="post.attributes.title">
+                    </div>
+                    <div class="blogList__info">
+                        <h2>{{ post.attributes.title }}</h2>
+                        <h3>{{ formatDate(post.attributes.date) }}</h3>
+                        <p>{{ formatExcerpt(post.body) }}...</p>
+                    </div>
+                </li>
+            </NuxtLink>                   -->
     </ul>
   </section>
 </template>
@@ -60,7 +88,5 @@ export default {
 };
 </script>
 
-/* 
-TODO -- i would love to figure out how to show the md in the summary... 
-right now its just plaintext not sure how to target the loader to parse this
- */
+/* TODO -- i would love to figure out how to show the md in the summary... right
+now its just plaintext not sure how to target the loader to parse this */

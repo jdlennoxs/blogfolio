@@ -45,7 +45,8 @@ export default {
     '@nuxtjs/eslint-module',
     ['@nuxtjs/google-analytics', {
       id: 'UA-155114575-1'
-    }]
+    }],
+    '@nuxtjs/eslint-module'
   ],
   /*
    ** Nuxt.js modules
