@@ -1,22 +1,17 @@
-.layout {
-    display: flex;
-    background-color: $background;
-    flex-direction: column;
-    max-width: 96rem;
-    margin: 0 auto;
-  }
-  
-  .content {
-    flex-grow: 1;
-  }
-  
-  @media (min-width: 72rem) {
-    .layout {
-      display: block;
-    }
-    .content {
-      flex-grow: none;
-      width: 70vw;
-    }
-  }
-  
+i-layout {
+  background-color: $background;
+}
+
+.content {
+  display: flex;
+  // background-color: $background;
+  flex-direction: column;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: $highlight;
+  width: 100vw;
+  height: 50px;
+}

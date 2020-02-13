@@ -1,7 +1,7 @@
 // the posts are passed down to the Blog List component to be rendered
 
 <template>
-  <div class="layout">
+  <div class="content">
     <section>
       <Hello />
     </section>
