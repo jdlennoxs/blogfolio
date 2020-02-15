@@ -3,7 +3,7 @@
 <template>
   <div class="content">
     <section>
-      <Hello />
+      <About v-bind="about" />
     </section>
     <section>
       <BlogList :posts="posts" />

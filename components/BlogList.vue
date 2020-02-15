@@ -1,10 +1,12 @@
 <template>
   <section>
     <ul class="list">
+      
+      <i-card variant="light">
       <NuxtLink
         v-for="post in sortedPosts"
         :key="post.attributes.title"
-        :to="`/${formatSlug(post.attributes.title)}`"
+        :to="`/blog/${formatSlug(post.attributes.title)}`"
       >
         <li>
           <div class="blogList__info">
@@ -14,17 +16,7 @@
           </div>
         </li>
       </NuxtLink>
-      <i-card variant="light">
-        <template slot="header">Light Card</template>
-        <h4>Title</h4>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </i-card>
-      <i-card variant="light">
-        <template slot="header">Light Card</template>
-        <h4>Title</h4>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
+    
       </i-card>
       <!-- <NuxtLink  
                 v-for="post in sortedPosts" 

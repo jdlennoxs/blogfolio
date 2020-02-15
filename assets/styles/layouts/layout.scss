@@ -1,16 +1,11 @@
-i-layout {
-  background-color: $background;
-}
-
 .content {
   display: flex;
-  // background-color: $background;
   flex-direction: column;
   max-width: 72rem;
   margin: 0 auto;
 }
 
-.footer {
+.layout-footer {
   background-color: $highlight;
   width: 100vw;
   height: 50px;
