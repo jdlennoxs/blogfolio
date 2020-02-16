@@ -36,6 +36,7 @@
 import sortPostsByDate from '../helpers/sortByDate';
 import formatDate from '../helpers/dateFormatter';
 import timeToRead from '../helpers/timeToRead';
+import Prism from '~/plugins/prism'
 export default {
   // get the slug as a param to import the correct md file
   async asyncData({ params }) {
@@ -88,6 +89,9 @@ export default {
       }
       return nextPath;
     }
+  },
+  mounted() {
+    Prism.highlightAll();
   }
 };
 </script>
