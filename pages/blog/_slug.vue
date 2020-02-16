@@ -93,6 +93,9 @@ export default {
       }
       return nextPath;
     }
+  },
+  mounted() {
+    Prism.highlightAll();
   }
 };
 </script>
