@@ -28,7 +28,7 @@ sections:
   path: content/data/config.json
   label: Site Info
 upload_dir: ''
-public_path: https://res.cloudinary.com/jdlennoxs/image/upload
+public_path: https://res.cloudinary.com/jdlennoxs/image/upload/v1581877374
 front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"

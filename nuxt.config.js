@@ -5,7 +5,7 @@ const glob = require('glob');
 const config = require("./content/data/config.json")
 /* eslin-enable */
 const dynamicRoutes = getDynamicPaths({
-  '/': 'content/blog-posts/*.md',
+  '/blog/': 'content/blog-posts/*.md',
 });
 
 export default {

@@ -4,18 +4,23 @@
   <article class="blog">
     <div class="blog__info">
       <h1>{{ post.attributes.title }}</h1>
-      <h2 class="sub">{{post.attributes.subtitle}}</h2>
-      <h3>{{ formattedDate }} • {{timeToRead }}</h3>
+      <h2 class="sub">{{ post.attributes.subtitle }}</h2>
+      <!-- <ul v-for="(tag, index) in post.attributes.tags" :key="index">
+        <div class="tag">{{ tag }}</div>
+      </ul> -->
+      <h3>{{ formattedDate }} • {{ timeToRead }}</h3>
     </div>
     <figure class="blog__hero">
       <img
-        :src="`https://res.cloudinary.com/jdlennoxs/image/upload/${post.attributes.hero_image}`"
+        :src="
+          `https://res.cloudinary.com/jdlennoxs/image/upload/${post.attributes.hero_image}`
+        "
         :alt="post.attributes.title"
       />
     </figure>
     <div class="blog__body" v-html="post.html"></div>
     <div class="blog__footer">
-      <NuxtLink v-if="nextBlogPath" :to="`/${nextBlogPath}`">
+      <NuxtLink v-if="nextBlogPath" :to="`/blog/${nextBlogPath}`">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -33,9 +38,9 @@
   </article>
 </template>
 <script>
-import sortPostsByDate from '../helpers/sortByDate';
-import formatDate from '../helpers/dateFormatter';
-import timeToRead from '../helpers/timeToRead';
+import sortPostsByDate from '../../helpers/sortByDate';
+import formatDate from '../../helpers/dateFormatter';
+import timeToRead from '../../helpers/timeToRead';
 export default {
   // get the slug as a param to import the correct md file
   async asyncData({ params }) {
