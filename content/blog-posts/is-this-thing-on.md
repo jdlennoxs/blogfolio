@@ -4,7 +4,8 @@ author: Jack Scott
 title: Is this thing on?
 date: 2019-12-23T17:00:00.000+00:00
 hero_image: "/v1577991023/reduced_xpwqet.png"
-time_to_read: 
+subtitle: An introduction to my new blog
+time_to_read:
 
 ---
 I've been sitting on the idea of creating a website for myself for a while now. I like the idea of a platform where I can share ideas, projects and opinions as well as test new skills. The fruits of my efforts are this little personal site.
@@ -13,9 +14,9 @@ I've been working within development teams since 2014; building web applications
 
 It's easy to get trapped inside the development bubble where the onus is on staying up to date, knowing the latest languages and frameworks, striving for source code nirvana. Considering the bigger picture, the ethics, economics, and politics of tech, is an important practice for developers. It helps to ground expectations, identify issues and understand motivations that are present throughout the industry. It has definitely served as good preparation, moving through the industry towards management and strategy focused positions.
 
-The broader our interests and knowledge the more [T Shaped](https://medium.com/@jchyip/why-t-shaped-people-e8706198e437) we can be. As such I frame this website as ramblings from a **budding technologist**
+The broader our interests and knowledge the more [T Shaped](https://medium.com/@jchyip/why-t-shaped-people-e8706198e437) we can be. As such I frame this website as ramblings from a budding technologist.
 
-> Technologist _/tɛkˈnɒlədʒɪst/_ an expert in a particular field of technology
+> 💡 Technologist _/tɛkˈnɒlədʒɪst/_ an expert in a particular field of technology
 
 I hope I can provide useful content for lots of types people, technical or otherwise. While there's not much here now, the intention is to add features and functionality supplemented by guides, explainers, opinions and explorations. I aim to do this by creating dev blog style write-ups of projects, articles and summaries, opinions on books and news and maybe more, so watch this space.
 

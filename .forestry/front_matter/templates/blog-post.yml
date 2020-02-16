@@ -8,6 +8,12 @@ fields:
   config:
     required: true
   description: Enter title, needs to match filename for routing
+- type: text
+  name: subtitle
+  label: subtitle
+  config:
+    required: true
+  description: Enter subtitle, this is the preview for the blog post
 - name: tags
   type: tag_list
   default: []
@@ -34,16 +40,6 @@ fields:
 - type: file
   name: hero_image
   label: hero_image
-- name: time_to_read
-  type: number
-  label: time_to_read
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
-  description: The approximate reading time of this article
-  hidden: true
+
 pages:
 - content/blog-posts/is-this-thing-on.md

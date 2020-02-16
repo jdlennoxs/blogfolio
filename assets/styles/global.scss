@@ -3,19 +3,18 @@
 // layouts ------------------------
 @import './layouts/layout.scss';
 //pages ----------------------------
-@import './pages/info.scss';
 @import './pages/blog/blog.scss';
 // components ------------------------
 @import './components/header.scss';
 @import './components/bloglist.scss';
+@import './components/about.scss';
 
 
-body {
+html {
   font-family: 'Inter', sans-serif; 
   font-feature-settings: 'liga' 1, 'ss01' 1;
   overflow-x: hidden;
   color: #000;
-  // font-size: 18px;
 }
 
 a {
@@ -24,11 +23,6 @@ a {
   transition: opacity .2s ease;
 }
 
-// a:hover {
-//   transition: opacity .2s ease;
-//   opacity: .5;
-//   text-decoration-color: inherit;
-// }
 ul {
   list-style: none;
   margin: 0;
@@ -36,7 +30,7 @@ ul {
 
 //TYPOGRAPHY-------------------------------------
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: -1px;
   line-height: 1.1875;
 }
@@ -49,21 +43,18 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  letter-spacing: -.5px;
-  line-height: 1.1875;
-  color: #c95869;
-  font-weight: normal;
+  color: $dark;
+  font-weight: 600;
 }
 
 p {
   font-size: 1.2rem;
-  // letter-spacing: -.5px;
-  line-height: 1.6;
-  color: #000;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $contrast;
 }
 
-@media (min-width: 1280px) {
-
+@media (min-width: 72rem) {
   h1 {
     font-size: 2rem;
     letter-spacing: -1px;
@@ -78,13 +69,12 @@ p {
   
   h3 {
     font-size: 1rem;
-    letter-spacing: -.5px;
-    line-height: 1.1875;
-    color: #c95869;
-    font-weight: normal;
+    color: $dark;
+    font-weight: 600;
   }
 
   p {
     line-height: 1.4375;
+    color: $contrast;
   }
 }

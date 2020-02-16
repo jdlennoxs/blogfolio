@@ -4,34 +4,152 @@
     }
   }
   
-  .nav {
-    padding: 1.5rem 1.25rem;
-    border-bottom: 1px solid #EBEBEB;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    img {
-      margin-bottom: 0;
+.nav {
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: $background;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  position: fixed;
+  width: 100%;
+  height: 5em;
+  z-index: 3;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    height: inherit;
+  }
+
+  .nav-menu {
+    clear: both;
+    max-height: 0px;
+    transition: max-height .2s ease-out;
+    padding: 0 2em;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+
+    .nav-item {
+      margin: 0;
+      display: block;
+      box-sizing: border-box;
+      color: $contrast;
+      padding: 1.8rem 1.2rem 0.95rem;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .nav-item {
+      span {
+        font-family: 'Nunito';
+        position: relative;
+      }
+
+      span::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        width: 100%;
+        height: 2px;
+        background-color: $dark;
+        transform-origin: center;
+        transform: translate(-50%, 0) scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      span:hover::before {
+        transform: translate(-50%, 0) scaleX(1);
+      }
     }
   }
+
+  .menu-icon {
+    cursor: pointer;
+    padding: 1.2rem 2rem 0.95rem;
+    position: relative;
+    user-select: none;
+    float: right;
+  }
+
+  .menu-btn {
+    display: none;
+
+    &:checked~.nav-menu {
+      max-height: 24em;
+    }
+  }
+
+
+  @media (min-width: 48em) {
+    .nav-item {
+      float: left;
+    }
+
+    .nav-menu {
+      clear: none;
+      float: right;
+      max-height: none;
+      box-shadow: none;
+    }
+
+    .menu-icon {
+      display: none;
+    }
+
+    .menu-btn:checked~.nav-menu {
+      max-height: 24em;
+      background-color: $background;
+    }
+  }
+
+  .logo {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.5em;
+    // font-family: Arial, sans-serif;
+    height: inherit;
+    color: $contrast;
+    text-decoration: none;
+    padding: 1rem 2rem 0.65rem;
+    position: fixed;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+}
   
-  @media (min-width: 768px) {
-    .header {
-      height: 100vh;
-      position: fixed;
-      left: 0;
-      top: 0;
-    }
+  // .nav {
+  //   padding: 1.5rem 1.25rem;
+  //   border-bottom: 1px solid $pink;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-direction: row;
+  //   align-items: center;
+  //   img {
+  //     margin-bottom: 0;
+  //   }
+  // }
+  
+  // @media (min-width: 768px) {
+  //   .header {
+  //     background-color: $white;
+  //     // height: 100vh;
+  //     // position: fixed;
+  //     // left: 0;
+  //     // top: 0;
+  //   }
     
-    .nav {
-      padding: 2rem;
-      width: 30vw;
-      height: 100%;
-      border-right: 1px solid #EBEBEB;
-      border-bottom: none;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
+  //   .nav {
+  //     padding: 1.5rem 1.25rem;
+  //     border-right: 1px solid $pink;  
+  //     display: flex;
+  //     justify-content: space-between;
+  //     flex-direction: row;
+  //     align-items: center;
+  //   }
+  // }
   

@@ -1,10 +1,11 @@
 import path from "path";
+import Mode from "frontmatter-markdown-loader/mode";
 /* eslint-disable */
 const glob = require('glob');
 const config = require("./content/data/config.json")
 /* eslin-enable */
 const dynamicRoutes = getDynamicPaths({
-  '/blog': 'content/blog-posts/*.md',
+  '/': 'content/blog-posts/*.md',
 });
 
 export default {
@@ -28,7 +29,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#c95869' },
+  loading: { color: '#fff' },
   /*
    ** Global CSS
    */
@@ -38,21 +39,19 @@ export default {
    */
   plugins: [],
   /*
-   ** Nuxt.js dev-modules
+   ** Nuxt.js build-modules
    */
-  devModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
-  ],
   buildModules: [
+    '@nuxtjs/eslint-module',
     ['@nuxtjs/google-analytics', {
       id: 'UA-155114575-1'
-    }]
+    }],
+    '@nuxtjs/eslint-module'
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@inkline/inkline/nuxt'],
   /*
    ** Build configuration
    */
@@ -65,7 +64,10 @@ export default {
         {
           test: /\.md$/,
           loader: "frontmatter-markdown-loader",
-          include: path.resolve(__dirname, "content/blog-posts")
+          include: path.resolve(__dirname, "content/blog-posts"),
+          options: {
+            mode: [Mode.HTML, Mode.META, Mode.BODY]
+          }
         })
     },
     babel: {
