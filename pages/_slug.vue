@@ -13,7 +13,7 @@
         :alt="post.attributes.title"
       />
     </figure>
-    <div v-html="post.html" class="blog__body"></div>
+    <div class="blog__body" v-html="post.html"></div>
     <div class="blog__footer">
       <NuxtLink v-if="nextBlogPath" :to="`/${nextBlogPath}`">
         <svg
@@ -37,26 +37,6 @@ import sortPostsByDate from '../helpers/sortByDate';
 import formatDate from '../helpers/dateFormatter';
 import timeToRead from '../helpers/timeToRead';
 export default {
-  computed: {
-    formattedDate() {
-      return formatDate(this.post.attributes.date);
-    },
-    timeToRead() {
-      return timeToRead(this.post.body);
-    },
-    nextBlogPath() {
-      // if there's no 'next' path, return the first path
-      const nextPath = isNull(
-        this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1]
-      )
-        ? ''
-        : this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1];
-      function isNull(item) {
-        return item === null || item === undefined;
-      }
-      return nextPath;
-    }
-  },
   // get the slug as a param to import the correct md file
   async asyncData({ params }) {
     try {
@@ -87,6 +67,26 @@ export default {
       };
     } catch (err) {
       return false;
+    }
+  },
+  computed: {
+    formattedDate() {
+      return formatDate(this.post.attributes.date);
+    },
+    timeToRead() {
+      return timeToRead(this.post.body);
+    },
+    nextBlogPath() {
+      // if there's no 'next' path, return the first path
+      const nextPath = isNull(
+        this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1]
+      )
+        ? ''
+        : this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1];
+      function isNull(item) {
+        return item === null || item === undefined;
+      }
+      return nextPath;
     }
   }
 };

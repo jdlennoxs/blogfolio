@@ -1,14 +1,12 @@
 <template>
-  <i-layout>
-    <i-layout-content>
+  <container>
+    <container class="layout-content">
       <nuxt />
-    </i-layout-content>
-    <i-layout-footer>
+    </container>
+    <container class="layout-footer">
       <div class="footer">
         Footer
       </div>
-    </i-layout-footer>
-  </i-layout>
+    </container>
+  </container>
 </template>
-
-<script></script>
