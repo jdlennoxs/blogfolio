@@ -4,7 +4,6 @@
 // layouts ------------------------
 @import './layouts/layout.scss';
 //pages ----------------------------
-@import './pages/info.scss';
 @import './pages/blog/blog.scss';
 // components ------------------------
 @import './components/header.scss';
@@ -32,7 +31,7 @@ ul {
 
 //TYPOGRAPHY-------------------------------------
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: -1px;
   line-height: 1.1875;
 }
@@ -44,14 +43,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: $dark;
   font-weight: 600;
 }
 
 p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
   color: $contrast;
 }
 

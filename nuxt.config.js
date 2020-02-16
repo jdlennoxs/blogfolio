@@ -5,7 +5,7 @@ const glob = require('glob');
 const config = require("./content/data/config.json")
 /* eslin-enable */
 const dynamicRoutes = getDynamicPaths({
-  '/blog': 'content/blog-posts/*.md',
+  '/': 'content/blog-posts/*.md',
 });
 
 export default {
@@ -29,7 +29,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#c95869' },
+  loading: { color: '#fff' },
   /*
    ** Global CSS
    */

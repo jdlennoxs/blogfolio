@@ -1,7 +1,7 @@
 // the posts are passed down to the Blog List component to be rendered
 
 <template>
-  <div class="content">
+  <div>
     <section>
       <About v-bind="about" />
     </section>
@@ -16,7 +16,6 @@ import BlogList from '~/components/BlogList.vue';
 import About from '~/components/About.vue';
 
 export default {
-  layout: 'layout',
   components: {
     About,
     BlogList
