@@ -1,6 +1,12 @@
 {
-    "urls": [
-      {"name": "Github", "URL": "https://github.com/jdlennoxs"}
-    ]
-  }
-  
+  "urls": [
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/jdlennoxs/"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/jdlennoxs"
+    }
+  ]
+}

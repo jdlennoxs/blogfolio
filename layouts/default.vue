@@ -4,9 +4,17 @@
       <nuxt />
     </container>
     <container class="layout-footer">
-      <div class="footer">
-        Footer
-      </div>
+      <Footer />
     </container>
   </container>
 </template>
+
+<script>
+import Footer from '~/components/Footer.vue';
+
+export default {
+  components: {
+    Footer
+  }
+};
+</script>
