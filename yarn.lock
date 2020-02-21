@@ -781,10 +781,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@inkline/inkline@1.20.5":
-  version "1.20.5"
-  resolved "https://registry.yarnpkg.com/@inkline/inkline/-/inkline-1.20.5.tgz#c552fb2aa5178a457f7f7a66e2ee810325ef4dd1"
-  integrity sha512-2bdtrFro3Ri1dS01zjHQvsuElNEXixXAarB3DF0rPo0TeVV8DPfrHm93lo4E1hF3aWjZwTyG6v5JGE84T5AdMw==
+"@inkline/inkline@1.21.0":
+  version "1.21.0"
+  resolved "https://registry.yarnpkg.com/@inkline/inkline/-/inkline-1.21.0.tgz#b1fe39733086eb860031697a42bbb03d142c7ebe"
+  integrity sha512-ItXMYwwdH0JKPcBOc7dEPJFv2OSzuas+sn/q/WTF7lRcNpUTmTHinvq/75/qUlSM0zuHXoS5pJ2bUBEdWX6IzA==
   dependencies:
     fuse.js "^3.4.6"
     popper.js "^1.16.1"
