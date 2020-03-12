@@ -13,8 +13,8 @@
     "forestry-preview": "nuxt -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
-    "@inkline/inkline": "1.21.0",
     "frontmatter-markdown-loader": "^3.2.1",
+    "@inkline/inkline": "1.21.1",
     "node-sass": "^4.13.1",
     "nuxt": "^2.11.0",
     "prismjs": "^1.19.0",
@@ -22,11 +22,11 @@
     "serialize-javascript": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/runtime-corejs3": "^7.8.4",
+    "@babel/runtime-corejs3": "^7.8.7",
     "@nuxtjs/eslint-config": "^2.0.2",
     "@nuxtjs/eslint-module": "^1.1.0",
     "@nuxtjs/google-analytics": "^2.2.2",
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.1.0",
     "core-js": "3.6.4",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
