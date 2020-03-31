@@ -1,6 +1,10 @@
 .about {
     margin: 10vh 0 10vh 0;
 
+    .label{
+        color: $dark;
+    }
+
     .about__info {
         display: flex;
         flex-direction: column;
