@@ -15,7 +15,7 @@
   "dependencies": {
     "frontmatter-markdown-loader": "^3.2.1",
     "node-sass": "^4.13.1",
-    "nuxt": "^2.11.0",
+    "nuxt": "^2.12.2",
     "prismjs": "^1.19.0",
     "sass-loader": "^8.0.2",
     "serialize-javascript": "^3.0.0"
