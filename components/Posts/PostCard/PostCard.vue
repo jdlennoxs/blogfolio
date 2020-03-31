@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink class="card" :to="`/blog/${formatSlug(post.attributes.title)}`">
+  <NuxtLink class="card" :to="`/post/${formatSlug(post.attributes.title)}`">
     <img
       class="card__hero"
       :src="

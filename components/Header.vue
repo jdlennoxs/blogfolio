@@ -12,8 +12,8 @@
         <NuxtLink class="nav-item" to="/projects">
           <span>Projects</span>
         </NuxtLink>
-        <NuxtLink class="nav-item" to="/blog">
-          <span>Blog</span>
+        <NuxtLink class="nav-item" to="/post">
+          <span>Post</span>
         </NuxtLink>
       </ul>
     </nav>

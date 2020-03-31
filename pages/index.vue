@@ -25,7 +25,7 @@ export default {
     try {
       // create context via webpack to map over all blog posts
       const postContext = await require.context(
-        '~/content/blog-posts/',
+        '~/content/posts/',
         true,
         /\.md$/
       );

@@ -5,7 +5,7 @@
     </div>
     <div class="layout-footer">
       <div>
-        ©Jack Scott 2020. This blog was created using Forestry & Gridsome
+        ©Jack Scott 2020. This site was created using Forestry & Gridsome
       </div>
     </div>
   </div>

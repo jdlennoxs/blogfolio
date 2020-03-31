@@ -2,9 +2,7 @@
   <article class="post__container">
     <img
       class="post__hero"
-      :src="
-        `https://res.cloudinary.com/jdlennoxs/image/upload/w_800,c_fill/${post.attributes.hero_image}`
-      "
+      :src="`https://res.cloudinary.com/jdlennoxs/image/upload/w_800,c_fill/${post.attributes.hero_image}`"
       :alt="post.attributes.title"
     />
     <div class="post__body">
@@ -22,7 +20,7 @@
       <div v-html="post.html"></div>
     </div>
     <div class="post__footer">
-      <NuxtLink v-if="next" :to="`/blog/${next}`">
+      <NuxtLink v-if="next" :to="`/post/${next}`">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"

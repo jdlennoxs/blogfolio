@@ -7,7 +7,6 @@
 </template>
 <script>
 import sortPostsByDate from '../../helpers/sortByDate';
-import Prism from '~/plugins/prism';
 import Post from '~/components/Posts/Post/Post.vue';
 export default {
   components: {
@@ -30,10 +29,10 @@ export default {
     try {
       const currentPath = params.slug;
       // get current post data
-      const post = await import(`~/content/blog-posts/${currentPath}.md`);
+      const post = await import(`~/content/posts/${currentPath}.md`);
       // get all post data for next route
       const postContext = await require.context(
-        '~/content/blog-posts/',
+        '~/content/posts/',
         true,
         /\.md$/
       );
@@ -63,8 +62,5 @@ export default {
       return false;
     }
   },
-  mounted() {
-    Prism.highlightAll();
-  }
 };
 </script>

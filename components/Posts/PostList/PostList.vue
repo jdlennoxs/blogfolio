@@ -1,12 +1,12 @@
 <template>
   <section>
-    <ul class="list">
-      <PostCard
-        v-for="post in posts"
-        :key="post.attributes.title"
-        :post="post"
-      ></PostCard>
-    </ul>
+    <div class="list">
+    <PostCard
+      v-for="post in posts"
+      :key="post.attributes.title"
+      :post="post"
+    ></PostCard>
+    </div>
   </section>
 </template>
 
