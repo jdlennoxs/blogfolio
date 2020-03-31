@@ -3,7 +3,7 @@
     <img
       class="post__hero"
       :src="
-        `https://res.cloudinary.com/jdlennoxs/image/upload/${post.attributes.hero_image}`
+        `https://res.cloudinary.com/jdlennoxs/image/upload/w_800,c_fill/${post.attributes.hero_image}`
       "
       :alt="post.attributes.title"
     />

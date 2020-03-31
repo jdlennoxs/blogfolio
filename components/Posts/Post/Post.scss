@@ -7,7 +7,7 @@
   box-shadow: 0 3px 5px rgba($shadow, 0.4);
   border-radius: 10px;
   display: grid;
-  grid-template-rows: 450px auto auto 60px;
+  grid-template-rows: 450px auto auto auto;
   justify-items: stretch;
 
   .post__hero {
@@ -36,7 +36,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-
+      height: 60px;
       svg {
         width: 20px;
       }
@@ -52,7 +52,7 @@
       }
     }
     width: 100%;
-    padding: 0 1.25rem;
+    padding: 1.25rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
