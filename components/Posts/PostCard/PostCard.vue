@@ -3,7 +3,7 @@
     <img
       class="card__hero"
       :src="
-        `https://res.cloudinary.com/jdlennoxs/image/upload/w_400,c_fill/${post.attributes.hero_image}`
+        `https://res.cloudinary.com/jdlennoxs/image/upload/w_400,c_fill/${post.attributes.hero_image}.webp`
       "
       :alt="post.attributes.title"
     />

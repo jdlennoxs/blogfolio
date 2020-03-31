@@ -3,7 +3,7 @@ tags: [blog]
 author: Jack Scott
 title: What is a blogfolio?
 date: 2019-12-23T17:00:00.000+00:00
-hero_image: "reduced_xpwqet.png"
+hero_image: "reduced_xpwqet"
 subtitle: Does that even exist or did you just make it up?
 time_to_read:
 

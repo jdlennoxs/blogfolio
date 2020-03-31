@@ -2,7 +2,7 @@
   <article class="post__container">
     <img
       class="post__hero"
-      :src="`https://res.cloudinary.com/jdlennoxs/image/upload/w_800,c_fill/${post.attributes.hero_image}`"
+      :src="`https://res.cloudinary.com/jdlennoxs/image/upload/w_800,c_fill/${post.attributes.hero_image}.webp`"
       :alt="post.attributes.title"
     />
     <div class="post__body">
