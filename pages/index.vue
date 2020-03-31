@@ -6,33 +6,31 @@
       <About v-bind="about" />
     </section>
     <section>
-      <BlogList :posts="posts" />
+      <PostList :posts="posts" />
     </section>
   </div>
 </template>
 
 <script>
-import BlogList from '~/components/BlogList.vue';
-import About from '~/components/About.vue';
+import sortPostsByDate from '../helpers/sortByDate';
+import PostList from '~/components/Posts/PostList/PostList.vue';
+import About from '~/components/About/About.vue';
 
 export default {
   components: {
     About,
-    BlogList
+    PostList
   },
   async asyncData() {
     try {
       // create context via webpack to map over all blog posts
-      const allPosts = await require.context(
+      const postContext = await require.context(
         '~/content/blog-posts/',
         true,
         /\.md$/
       );
+      const posts = sortPostsByDate(postContext.keys().map((key) => postContext(key)));
       const about = await import('~/content/data/about.json');
-      const posts = allPosts.keys().map((key) => {
-        // give back the value of each post context
-        return allPosts(key);
-      });
       return {
         posts,
         about

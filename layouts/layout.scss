@@ -1,0 +1,17 @@
+.layout-content {
+  max-width: 68rem;
+  margin: 0 auto;
+}
+
+.layout-footer {
+  margin-top: 3rem;
+  background-color: $highlight;
+  display: grid;
+  padding: 2.5rem;
+  justify-items: center;
+  align-items: end;
+  align-self: end;
+  -moz-box-shadow: inset 0 7px 9px -7px rgba($shadow, 0.4);
+  -webkit-box-shadow: inset 0 7px 9px -7px rgba($shadow, 0.4);
+  box-shadow: inset 0 7px 9px -7px rgba($shadow, 0.4);
+}

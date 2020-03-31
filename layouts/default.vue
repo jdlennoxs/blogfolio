@@ -1,20 +1,13 @@
 <template>
-  <container>
-    <container class="layout-content">
+  <div class="layout">
+    <div class="layout-content">
       <nuxt />
-    </container>
-    <container class="layout-footer">
-      <Footer />
-    </container>
-  </container>
+    </div>
+    <div class="layout-footer">
+      <div>
+        ©Jack Scott 2020. This blog was created using Forestry & Gridsome
+      </div>
+    </div>
+  </div>
 </template>
 
-<script>
-import Footer from '~/components/Footer.vue';
-
-export default {
-  components: {
-    Footer
-  }
-};
-</script>

@@ -8,7 +8,6 @@ subtitle: An introduction to whatever this is
 time_to_read:
 
 ---
-# Hi
 ## What am I reading right now?
 I've been harbouring on the idea of creating myself a website for a while now. I like the idea of a platform where I can share ideas, projects and opinions as well as test new skills. The fruits of my efforts are this, currently rather bare, personal site.
 

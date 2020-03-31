@@ -1,13 +1,16 @@
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@400;500;700&display=swap');
 @import './colors.scss';
 // layouts ------------------------
-@import './layouts/layout.scss';
+@import '../../layouts/layout.scss';
 //pages ----------------------------
 @import './pages/blog/blog.scss';
 // components ------------------------
 @import './components/header.scss';
-@import './components/bloglist.scss';
-@import './components/about.scss';
+@import '../../components/Posts/PostList/postlist.scss';
+@import '../../components/Posts/PostCard/PostCard.scss';
+@import '../../components/Posts/Post/Post.scss';
+@import '../../components/About/about.scss';
 
 
 html {
@@ -15,6 +18,7 @@ html {
   font-feature-settings: 'liga' 1, 'ss01' 1;
   overflow-x: hidden;
   color: #000;
+  text-decoration: none;
 }
 
 a {
@@ -30,51 +34,30 @@ ul {
 
 //TYPOGRAPHY-------------------------------------
 h1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
   font-size: 2.5rem;
-  letter-spacing: -1px;
   line-height: 1.1875;
+  color: $contrast;
 }
 
 h2 {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
   font-size: 1.7rem;
-  letter-spacing: -.75px;
   line-height: 1.2;
+  color: $contrast;
 }
 
 h3 {
   font-size: 1.2rem;
-  color: $dark;
+  color: $contrast;
   font-weight: 600;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
   color: $contrast;
-}
-
-@media (min-width: 72rem) {
-  h1 {
-    font-size: 2rem;
-    letter-spacing: -1px;
-    line-height: 1.1875;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-    letter-spacing: -.75px;
-    line-height: 1.1667;
-  }
-  
-  h3 {
-    font-size: 1rem;
-    color: $dark;
-    font-weight: 600;
-  }
-
-  p {
-    line-height: 1.4375;
-    color: $contrast;
-  }
 }
