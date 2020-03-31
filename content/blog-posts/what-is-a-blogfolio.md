@@ -16,6 +16,7 @@ It's easy to get trapped inside the development bubble where the focus is on sta
 Enjoying and practicing your trade also helps you to grow, this site will function as both my blog and portfolio to showcase projects, hacks and opinions. A blogfolio?
 I consider myself as something of a budding technologist with a range of interests.
 > 💡 Technologist _/tɛkˈnɒlədʒɪst/_ an expert in a particular field of technology
+
 The broader our interests and knowledge the more [T shaped](https://medium.com/@jchyip/why-t-shaped-people-e8706198e437) we can be and the more places we can apply our skills.
 
 This is my testing ground and my sounding board. Stay tuned!
