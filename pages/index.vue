@@ -2,12 +2,8 @@
 
 <template>
   <div>
-    <section>
-      <About v-bind="about" />
-    </section>
-    <section>
-      <PostList :posts="posts" />
-    </section>
+    <About v-bind="about" />
+    <PostList :posts="posts" />
   </div>
 </template>
 
@@ -29,7 +25,9 @@ export default {
         true,
         /\.md$/
       );
-      const posts = sortPostsByDate(postContext.keys().map((key) => postContext(key)));
+      const posts = sortPostsByDate(
+        postContext.keys().map((key) => postContext(key))
+      );
       const about = await import('~/content/data/about.json');
       return {
         posts,

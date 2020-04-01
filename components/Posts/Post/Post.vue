@@ -2,18 +2,22 @@
   <article class="post__container">
     <img
       class="post__hero"
-      :src="`https://res.cloudinary.com/jdlennoxs/image/upload/w_800,c_fill/${post.attributes.hero_image}.webp`"
+      :src="
+        `https://res.cloudinary.com/jdlennoxs/image/upload/w_800,c_fill/${post.attributes.hero_image}.webp`
+      "
       :alt="post.attributes.title"
     />
     <div class="post__body">
-      <h1>{{ post.attributes.title }}</h1>
-      <h3>{{ post.attributes.subtitle }}</h3>
-      <!-- <ul v-for="(tag, index) in post.attributes.tags" :key="index">
+      <div class="post__body--header">
+        <h1>{{ post.attributes.title }}</h1>
+        <h3>{{ post.attributes.subtitle }}</h3>
+        <!-- <ul v-for="(tag, index) in post.attributes.tags" :key="index">
         <div class="tag">{{ tag }}</div>
       </ul> -->
-      <div class="post__info">
-        <p>{{ formattedDate }} ×</p>
-        <p class="italic">{{ timeToRead }}</p>
+        <div class="post__body--info">
+          <p>{{ formattedDate }} ×</p>
+          <p class="italic">{{ timeToRead }}</p>
+        </div>
       </div>
     </div>
     <div class="post__body">
