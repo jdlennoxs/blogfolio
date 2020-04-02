@@ -10,9 +10,8 @@
 @import '../../components/Posts/Post/Post.scss';
 @import '../../components/About/about.scss';
 
-
 html {
-  font-family: 'Inter', sans-serif; 
+  font-family: 'Inter', sans-serif;
   font-feature-settings: 'liga' 1, 'ss01' 1;
   overflow-x: hidden;
   color: #000;
@@ -22,7 +21,7 @@ html {
 a {
   text-decoration: none;
   color: inherit;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
 }
 
 ul {
@@ -42,20 +41,51 @@ h1 {
 h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.2;
   color: $contrast;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: $contrast;
   font-weight: 600;
 }
 
 p {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 400;
   line-height: 1.5;
   color: $contrast;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.1875;
+    color: $contrast;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    color: $contrast;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: $contrast;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $contrast;
+  }
 }
