@@ -40,6 +40,3 @@ fields:
 - type: file
   name: hero_image
   label: hero_image
-
-pages:
-- content/blog-posts/is-this-thing-on.md
