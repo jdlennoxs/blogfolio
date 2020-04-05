@@ -5,7 +5,7 @@ const glob = require('glob');
 const config = require("./content/data/config.json")
 /* eslin-enable */
 const dynamicRoutes = getDynamicPaths({
-  '/posts/': 'content/posts/*.md',
+  '/posts': 'content/posts/*.md',
 });
 
 export default {
@@ -32,7 +32,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#F8856E' },
   /*
    ** Global CSS
    */
@@ -106,6 +106,7 @@ function getDynamicPaths(urlFilepathTable) {
       const routes = glob
         .sync(filepathGlob)
         .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
+        console.log(routes);
       return routes
     })
   );

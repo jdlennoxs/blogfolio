@@ -2,10 +2,10 @@
 tags:
 - blog
 author: Jack Scott
-title: README
+title: README.md
 date: 2019-12-23T17:00:00.000+00:00
 hero_image: reduced_xpwqet
-subtitle: Why I've decided to start a blogfolio (yes, I know that's not a real thing)
+subtitle: Why I've decided to invent the term blogfolio and then write about it.
 
 ---
 The tools available today make it easier than ever for developers to make their work accessible and available to a wider audience. Combining that work with explanation and insight makes that work all the more valuable. I know the concept of the dev blog is nothing new but I want to be able to share my ideas and projects.
