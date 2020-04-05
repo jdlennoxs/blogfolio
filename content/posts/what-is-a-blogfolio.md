@@ -2,7 +2,7 @@
 tags:
 - blog
 author: Jack Scott
-title: One small step...
+title: README.md
 date: 2019-12-23T17:00:00.000+00:00
 hero_image: reduced_xpwqet
 subtitle: Why I've decided to start a blogfolio (yes, I know that's not a real thing)
