@@ -21,6 +21,7 @@
       </div>
     </div>
     <div class="post__body">
+      <!-- eslint-disable-next-line -->
       <div v-html="post.html"></div>
     </div>
     <div class="post__footer">

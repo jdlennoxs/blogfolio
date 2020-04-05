@@ -111,6 +111,11 @@
       margin-bottom: 1.25rem;
       padding-left: 1.45rem;
     }
+    blockquote {
+      padding: 5px 0 5px 10px;
+      background: #f5f5f5;
+      border-left: 5px solid #f8856e;
+    }
   }
   @media (min-width: 768px) {
     .post__body {
