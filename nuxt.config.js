@@ -1,5 +1,6 @@
 import path from "path";
 import Mode from "frontmatter-markdown-loader/mode";
+import purgecss from '@fullhuman/postcss-purgecss';
 /* eslint-disable */
 const glob = require('glob');
 const config = require("./content/data/config.json")
@@ -41,7 +42,7 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '~/plugins/prism'
+    '~/plugins/prism',
   ],
   /*
    ** Nuxt.js build-modules
@@ -93,6 +94,14 @@ export default {
       }
     },
     extractCSS: true,
+    postcss: {
+      plugins: [
+        purgecss({
+          content: ['./pages/**/*.vue', './layouts/**/*.vue', './components/**/*.vue'],
+          whitelist: ['html', 'body'],
+        })
+      ]
+    }
   },
   generate: {
     routes: dynamicRoutes,
