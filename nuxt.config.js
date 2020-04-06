@@ -15,8 +15,8 @@ export default {
    */
   head: {
     htmlAttrs: {
-    lang: 'en',
-  },
+      lang: 'en',
+    },
     title: config.title || '',
     meta: [
       { charset: 'utf-8' },
@@ -55,7 +55,12 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    'nuxt-purgecss'
+  ],
+  purgeCSS: {
+    whitelistPatternsChildren: [/token$/]
+  },
   /*
    ** Build configuration
    */
@@ -86,7 +91,8 @@ export default {
           ]
         ]
       }
-    }
+    },
+    extractCSS: true,
   },
   generate: {
     routes: dynamicRoutes,
@@ -106,7 +112,6 @@ function getDynamicPaths(urlFilepathTable) {
       const routes = glob
         .sync(filepathGlob)
         .map(filepath => `${url}/${path.basename(filepath, '.md')}`);
-        console.log(routes);
       return routes
     })
   );
