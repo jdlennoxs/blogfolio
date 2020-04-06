@@ -1,17 +1,15 @@
 .post__container {
   max-width: 50rem;
-  margin: 50px auto;
+  margin: 0px auto;
   background-color: $light;
   -webkit-box-shadow: 0 3px 5px rgba($shadow, 0.4);
   -moz-box-shadow: 0 3px 5px rgba($shadow, 0.4);
   box-shadow: 0 3px 5px rgba($shadow, 0.4);
-  border-radius: 10px;
   display: grid;
   grid-template-rows: 450px auto auto auto;
   justify-items: stretch;
 
   .post__hero {
-    border-radius: 10px 10px 0 0;
     object-fit: cover;
     height: 450px;
   }
@@ -118,6 +116,11 @@
     }
   }
   @media (min-width: 768px) {
+    margin: 3rem auto;
+    border-radius: 10px;
+    .post__hero {
+      border-radius: 10px 10px 0 0;
+    }
     .post__body {
       max-width: 800px;
       padding: 1.25rem 3.5rem;
