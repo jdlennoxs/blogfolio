@@ -1,8 +1,8 @@
 .card {
   background: $light;
-  -webkit-box-shadow: 0 3px 5px rgba($shadow, 0.2);
-  -moz-box-shadow: 0 3px 5px rgba($shadow, 0.2);
-  box-shadow: 0 3px 5px rgba($shadow, 0.2);
+  // -webkit-box-shadow: 0 3px 5px rgba($shadow, 0.2);
+  // -moz-box-shadow: 0 3px 5px rgba($shadow, 0.2);
+  // box-shadow: 0 3px 5px rgba($shadow, 0.2);
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -14,18 +14,28 @@
 
   &:hover {
     z-index: 10;
-    -webkit-box-shadow: 0 3px 5px rgba($shadow, 0.4);
-    -moz-box-shadow: 0 3px 5px rgba($shadow, 0.4);
-    box-shadow: 0 3px 5px rgba($shadow, 0.4);
+    -webkit-box-shadow: 0 3px 5px rgba($shadow, 0.2);
+    -moz-box-shadow: 0 3px 5px rgba($shadow, 0.2);
+    box-shadow: 0 3px 5px rgba($shadow, 0.2);
     h2 {
       color: $highlight;
     }
   }
 }
 
-.card__label {
-  align-self: center;
-  padding: 10px;
+.card__header {
+  -moz-box-shadow: inset 0 -7px 9px -10px rgba($shadow, 0.4);
+  -webkit-box-shadow: inset 0 -7px 9px -10px rgba($shadow, 0.4);
+  box-shadow: inset 0 -7px 9px -10px rgba($shadow, 0.4);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 15px;
+  align-items: center;
+  p {
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 0px;
+  }
 }
 
 .card__hero {
