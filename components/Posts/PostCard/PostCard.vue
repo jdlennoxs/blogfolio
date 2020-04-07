@@ -1,7 +1,7 @@
 <template>
   <NuxtLink class="card" :to="`/posts/${formatSlug(post.attributes.title)}`">
-  <div class="card__body">
-    <p v-for="tag in post.attributes.tag" :key=tag>{{tag}}</p>
+  <div class="card__header">
+    <p v-for="tag in post.attributes.tags" :key=tag>{{tag}}</p>
   </div>
     <img
       class="card__hero"
