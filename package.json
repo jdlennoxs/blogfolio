@@ -13,7 +13,7 @@
     "forestry-preview": "nuxt -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
-    "frontmatter-markdown-loader": "^3.3.0",
+    "frontmatter-markdown-loader": "^3.4.1",
     "node-sass": "^4.14.0",
     "nuxt": "^2.11.0",
     "nuxt-purgecss": "^0.2.1",
